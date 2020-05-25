@@ -53,11 +53,11 @@ console.log("********************* Assigned Operator **********************")
 
 var num = 6;
 console.log("num :", num)
-num += 3;
+num += 3; // num = num + 3
 console.log("Sum Assignement --> num += 3 =", num);
 
 console.log("num :", num)
-num -= 3;
+num -= 3; // num = num-3
 console.log("Subtract Assignement --> num -= 3 =", num);
 
 console.log("num :", num)
@@ -75,8 +75,8 @@ console.log("Module Assignement --> num %= 3 =", num);
 console.log(" ");
 console.log("********************* Comparison Operator **********************");
 
-num1 = parseInt(prompt("Enter first number"));
-num2 = parseInt(prompt("Enter second number"));
+num1 = 0 ; //parseInt(prompt("Enter first number"));
+num2 = 1; //parseInt(prompt("Enter second number"));
 
 console.log("num1 -->", typeof num1, num1);
 console.log("num2 -->", typeof num2, num2);
@@ -110,7 +110,36 @@ console.log("Check Type not equal --> !==");
 console.log(" ");
 console.log("********************* Boolean Operator **********************");
 
+
 console.log("AND --> &&");
 console.log("OR  --> ||");
 console.log("NOT --> !");
 console.log("NOT Equal -> !=");
+
+str1 = prompt("Enter string 1");
+str2 = prompt("Enter string 2");
+str3 = prompt("Enter string 3");
+
+if(str1 == str2){
+    if(str2 == str3){
+        console.log("value of string 1", str1, "is equal to string 3", str3);
+    }
+    else{
+        console.log("str 2 not equal to str 3");
+    }
+}
+else
+    console.log("str1 not equal to str2");
+
+
+if((str1 == str2) && (str2 == str3)){
+console.log("value of string 1", str1, "is equal to string 3", str3);
+}
+else
+    console.log("all 3 strings not same, any 2 might be same");
+
+if((str1 == str2) || (str1 == str3) || (str2 == str3)){
+console.log("2 strings have same values");
+}
+else
+    console.log("all strings have diff values");
