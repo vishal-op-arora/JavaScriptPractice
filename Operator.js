@@ -1,5 +1,5 @@
-// Airthmatic Operator 
-console.log("********************* Airthmatic Operator **********************")
+// Arithmatic Operator 
+console.log("********************* Arithmatic Operator **********************")
 
 var sum = 6 + 3;
 console.log("Addition = 6 + 3 =", sum);
@@ -14,7 +14,7 @@ var div = 6 / 3;
 console.log("Division = 6 / 3 =", div);
 
 var mod = 6 % 3;
-console.log("Modules (Remainder) = 6 % 3 =", mod);
+console.log("Modulus (Remainder) = 6 % 3 =", mod);
 
 var inc = 1;
 console.log("inc value :", inc);
@@ -43,11 +43,11 @@ console.log("str1.concat(str2) -->", str1.concat(str2));
 console.log("Charactor Count str3.length -->", str3.length);
 console.log("Character at 6 str3.charAt(5) -->", str3.charAt(5));
 console.log("Replace Hi with Hello - str3.replace('Hi', 'Hello')-->", str3.replace("Hi", "Hello"));
-console.log("Convert String in upercase str3.toUpperCase() -->", str3.toUpperCase())
+console.log("Convert String in upercase str3.toUpperCase() -->", str3 = str3.toUpperCase())
 console.log("Slice the string str3.slice(4,) -->", str3.slice(4,));
-console.log("Find the index of Lucy str3.indexOf('Lucy') -->", str3.indexOf("Lucy"));
+console.log("Find the index of Lucy str3.indexOf('LUCY') -->", str3.indexOf("LUCY"));
 
-//Assigned Operatior 
+//Assigned Operator 
 console.log(" ");
 console.log("********************* Assigned Operator **********************")
 
@@ -75,8 +75,8 @@ console.log("Module Assignement --> num %= 3 =", num);
 console.log(" ");
 console.log("********************* Comparison Operator **********************");
 
-num1 = 0 ; //parseInt(prompt("Enter first number"));
-num2 = 1; //parseInt(prompt("Enter second number"));
+num1 = 0 ; parseInt(prompt("Enter first number"));
+num2 = 1; parseInt(prompt("Enter second number"));
 
 console.log("num1 -->", typeof num1, num1);
 console.log("num2 -->", typeof num2, num2);
@@ -96,12 +96,17 @@ else {
 var num = 0;
 console.log("num -->", typeof num);
 
-if (num === num1) {
-    console.log("num and num1 are of same type.")
+num1 = '0'
+if (num == num1) {
+    console.log("num and num1 have same values.")
 }
 
+num2 = "0"
 if (num === num2) {
-    console.log("num and num2 are of same type.")
+    console.log("num and num2 are of same type and have same value.")
+}
+else{
+    console.log("num and num2 are not of same type")
 }
 
 console.log("Check Type equal --> ===");
@@ -116,7 +121,7 @@ console.log("OR  --> ||");
 console.log("NOT --> !");
 console.log("NOT Equal -> !=");
 
-str1 = prompt("Enter string 1");
+str1 = prompt("Enter string 1", "happy");
 str2 = prompt("Enter string 2");
 str3 = prompt("Enter string 3");
 
